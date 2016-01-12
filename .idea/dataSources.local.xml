@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - pictionnary@localhost" uuid="8d8120ce-a67d-4f04-bbce-8dd40dd3c942">
+      <secret-storage>master_key</secret-storage>
+      <user-name>test</user-name>
+      <schema-pattern>pictionnary.*</schema-pattern>
+      <default-schemas>pictionnary.*</default-schemas>
+    </data-source>
+  </component>
+</project>

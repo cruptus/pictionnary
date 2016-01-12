@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - pictionnary@localhost" uuid="8d8120ce-a67d-4f04-bbce-8dd40dd3c942">
+    <database-info product="MySQL" version="5.6.21" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="pictionnary"/>
+      <table id="2" parent="1" name="users"/>
+      <table id="3" parent="1" name="drawings"/>
+      <column id="4" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="5" parent="2" name="email">
+        <mandatory>1</mandatory>
+        <data-type>varchar(65)</data-type>
+      </column>
+      <column id="6" parent="2" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(65)</data-type>
+      </column>
+      <column id="7" parent="2" name="nom">
+        <data-type>varchar(65)</data-type>
+      </column>
+      <column id="8" parent="2" name="prenom">
+        <data-type>varchar(65)</data-type>
+      </column>
+      <column id="9" parent="2" name="tel">
+        <data-type>varchar(16)</data-type>
+      </column>
+      <column id="10" parent="2" name="website">
+        <data-type>varchar(65)</data-type>
+      </column>
+      <column id="11" parent="2" name="sexe">
+        <data-type>char(1)</data-type>
+      </column>
+      <column id="12" parent="2" name="birthdate">
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+      </column>
+      <column id="13" parent="2" name="ville">
+        <data-type>varchar(65)</data-type>
+      </column>
+      <column id="14" parent="2" name="taille">
+        <data-type>smallint(6)</data-type>
+      </column>
+      <column id="15" parent="2" name="couleur">
+        <data-type>char(6)</data-type>
+        <default-expression>&apos;000000&apos;</default-expression>
+      </column>
+      <column id="16" parent="2" name="profilepic">
+        <data-type>blob</data-type>
+      </column>
+      <index id="17" parent="2" name="email">
+        <columns>email</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="18" parent="2" name="email">
+        <columns>email</columns>
+        <underlying-index>email</underlying-index>
+      </key>
+      <key id="19" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="20" parent="3" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="21" parent="3" name="id_user">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="22" parent="3" name="commands">
+        <mandatory>1</mandatory>
+        <data-type>blob</data-type>
+      </column>
+      <column id="23" parent="3" name="dessin">
+        <mandatory>1</mandatory>
+        <data-type>blob</data-type>
+      </column>
+      <column id="24" parent="3" name="nom">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <key id="25" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
